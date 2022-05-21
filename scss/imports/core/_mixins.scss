@@ -1,0 +1,25 @@
+@mixin white-btn {
+  color: $white;
+  border-color: $white;
+
+  &:hover {
+    color: $black;
+  }
+
+  &::before {
+    background: $white;
+  }
+}
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+@mixin form-btn {
+  width: 100%;
+  text-align: center;
+
+  &:hover {
+    background: $black;
+  }
+}
